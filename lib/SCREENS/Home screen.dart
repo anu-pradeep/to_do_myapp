@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '../CUSTOM WIDGETS/appbar.dart';
 import '../CUSTOM WIDGETS/floating action button.dart';
+
 void main() {
   runApp(const MaterialApp(
     home: HomeScreen(),
@@ -8,6 +9,7 @@ void main() {
     useInheritedMediaQuery: true,
   ));
 }
+
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
 
@@ -22,17 +24,16 @@ class _HomeScreenState extends State<HomeScreen> {
         length: 2,
         child: Scaffold(
             appBar: AppbarCustom(),
-            body: TabBarView(children: [
-              SingleChildScrollView(
-                child: FloatingButton(),
-              ),
-              SingleChildScrollView(
-                child: FloatingButton(),
-              )
-            ],
-
-            )
-        ));
+            body: TabBarView(
+              children: [
+                SingleChildScrollView(
+                  child: FloatingButton(),
+                ),
+                SingleChildScrollView(
+                  child: FloatingButton(),
+                )
+              ],
+            ),),
+    );
   }
 }
-

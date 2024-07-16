@@ -1,9 +1,8 @@
-import 'package:flutter/material.darT';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-
 import '../CUSTOM WIDGETS/Textformfield PWD.dart';
 import '../CUSTOM WIDGETS/textformfield NAMES.dart';
+
 void main() {
   runApp(const MaterialApp(
     home: Login(),
@@ -52,7 +51,8 @@ class LoginState extends State<Login> {
                     height: 30,
                   ),
                   const Padding(
-                    padding: EdgeInsets.only(top: 08,left: 15,right: 15,bottom: 08),
+                    padding: EdgeInsets.only(
+                        top: 08, left: 15, right: 15, bottom: 08),
                     child: TextFormName(
                       label: 'User name',
                     ),
@@ -61,9 +61,10 @@ class LoginState extends State<Login> {
                     height: 25,
                   ),
                   const Padding(
-                    padding: EdgeInsets.only(top: 08,left: 15,right: 15,bottom: 08),
+                    padding: EdgeInsets.only(
+                        top: 08, left: 15, right: 15, bottom: 08),
                     child:
-                    CustomTextField(label: 'Password', iconVisible: true),
+                        CustomTextField(label: 'Password', iconVisible: true),
                   ),
                   const SizedBox(
                     height: 30,
@@ -94,4 +95,3 @@ class LoginState extends State<Login> {
                 ]))));
   }
 }
-
