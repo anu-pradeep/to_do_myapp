@@ -17,7 +17,7 @@ class TaskBox extends StatelessWidget {
     return AlertDialog(
       backgroundColor: Colors.green[100],
       content: SizedBox(
-        height: 120,
+        height: 140,
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
