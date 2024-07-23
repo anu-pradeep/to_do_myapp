@@ -2,13 +2,15 @@ import 'dart:async';
 import 'package:flutter/material.darT';
 import 'package:google_fonts/google_fonts.dart';
 
-void main() {
-  runApp(const MaterialApp(
-    debugShowCheckedModeBanner: false,
-    home: SplashToDo(),
-    useInheritedMediaQuery: true,
-  ));
-}
+import 'Home page.dart';
+
+// void main() {
+//   runApp(const MaterialApp(
+//     debugShowCheckedModeBanner: false,
+//     home: SplashToDo(),
+//     useInheritedMediaQuery: true,
+//   ));
+// }
 
 class SplashToDo extends StatefulWidget {
   const SplashToDo({super.key});
@@ -22,6 +24,7 @@ class _splashappstate extends State<SplashToDo> {
   void initState() {
     super.initState();
     Timer(const Duration(seconds: 8), () {
+      Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>HomeScreen()));
     });
   }
 
